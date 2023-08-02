@@ -57,10 +57,8 @@ cadastrar.addEventListener('click', function() {
     // Aciona o evento de click para cadastrar na tela
     let nome = document.querySelector('#fullName').value;
     let poder = document.querySelector('#power').value;
-    let genero = document.querySelectorAll('input[name="gender"]').value;
+    let genero = document.querySelectorAll('input[name="gender"]:checked');
     let nascimento = document.querySelector('#dateBirth').value;
 
-    console.log(genero)
-
-    createCard(nome, poder, genero, nascimento)
+    createCard(nome, poder, genero[0].id, nascimento)
 })
