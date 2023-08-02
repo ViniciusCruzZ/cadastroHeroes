@@ -57,7 +57,7 @@ cadastrar.addEventListener('click', function() {
     // Aciona o evento de click para cadastrar na tela
     let nome = document.querySelector('#fullName').value;
     let poder = document.querySelector('#power').value;
-    let genero = document.querySelector('input[name="gender"]').value;
+    let genero = document.querySelectorAll('input[name="gender"]').value;
     let nascimento = document.querySelector('#dateBirth').value;
 
     console.log(genero)
