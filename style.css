@@ -1,0 +1,102 @@
+@charset "utf-8";
+
+/* Reset All */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Variáveis */
+:root {
+    --primary-font: 'Poppins', sans-serif;
+    --bg-color: #221C33;
+    --primary-color: #09090A;
+    --text-color: #E1E1E6;
+    --special-color: #00893e;
+}
+
+/* Início */
+body {
+    font-family: var(--primary-font);
+    background-color: var(--bg-color);
+    color: var(--text-color);
+}
+
+main {
+    margin: 30px auto;
+    padding: 20px;
+    max-width: 700px;
+    border-radius: 5px;
+    box-shadow: 4px 4px 2px #7c7c7c4a;
+    background-color: var(--primary-color);
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Form */
+
+span {
+    color: var(--special-color);
+}
+
+input {
+    outline: none;
+    padding: 5px;
+    border-radius: 3px;
+    border: 1px solid transparent;
+    transition: ease-in .2s;
+    margin-bottom: 20px; 
+}
+
+input:focus {
+    border: 1px solid var(--special-color);
+}
+
+input[type='text'] {
+    width: 400px;
+}
+
+#btnCadastrar {
+    display: block;
+    cursor: pointer;
+    font-weight: bold;
+
+    background-color: var(--primary-color);
+    color: var(--text-color);
+
+    border: 1px solid var(--special-color);
+    margin: 25px auto 15px;
+    padding: 10px 25px;
+}
+
+#btnCadastrar:hover {
+    background-color: var(--special-color);
+    color: var(--primary-color);
+}
+
+/* Hero List */
+.heroList {
+    width: 900px;
+    margin: 20px auto;
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.hero {
+    width: 280px;
+    padding: 15px;
+    border-radius: 10px;
+    background-color: var(--special-color);
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+}
+
+img {
+    width: 100px;
+}

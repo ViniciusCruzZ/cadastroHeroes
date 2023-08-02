@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de Heróis</title>
+
+    <!-- CSS & JS -->
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+
+    <!-- ICONS -->
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+
+    <!-- FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <main>
+        <h1>INSCRIÇÃO DE <span>HERÓIS</span></h1>
+        <form>
+            <!-- FORM DE CADASTRO -->
+            <label for="fullName">Nome completo:</label>
+            <input type="text" name="fullName" id="fullName">
+            <br>
+
+            <label for="power">Poder elementar:</label>
+            <select name="power" id="power">
+                <option value="" selected disabled>SELECIONE</option>
+                <option value="FOGO">FOGO</option>
+                <option value="ÁGUA">ÁGUA</option>
+                <option value="TERRA">TERRA</option>
+                <option value="AR">AR</option>
+            </select>
+            <br>
+
+            <label>Gênero:</label>
+            <input type="radio" name="gender" id="M">
+            <label for="M"><i class="ph ph-gender-male"></i></label>
+            <input type="radio" name="gender" id="F">
+            <label for="F"><i class="ph ph-gender-female"></i></label>
+            <br>
+
+            <label for="dateBirth">Data de nascimento:</label>
+            <input type="date" name="dateBirth" id="dateBirth">
+            <br>
+
+            <button type="button" id="btnCadastrar">CADASTRAR</button>
+        </form>
+    </main>
+    
+    <section class="heroList"></section>
+</body>
+</html>
