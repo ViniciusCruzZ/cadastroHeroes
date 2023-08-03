@@ -77,10 +77,10 @@ function getAvatarByGender(gender) {
 
 function createHero(name, power, gender, birth) {
     return {
-        name: name,
-        power: power,
-        gender: gender,
-        birth: birth
+        name,
+        power,
+        gender,
+        birth
     };
 }
 
@@ -102,7 +102,6 @@ function powerIcon(power) {
             i.classList.add('ph-wind');
             break;
         default:
-            // Adicione um ícone padrão caso o poder não seja reconhecido
             i.classList.add('ph-question');
             break;
     }
