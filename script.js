@@ -150,3 +150,34 @@ cadastrar.addEventListener('click', function () {
     heroes.push(hero);
     createCard(hero);
 });
+
+// Tentativa de conexão do banco de dados
+
+// const connection = require('./db-config'); // Importa as configurações de conexão
+
+
+// cadastrar.addEventListener('click', function () {
+//     let nome = document.querySelector('#fullName').value;
+//     let poder = document.querySelector('#power').value;
+//     let genero = document.querySelector('input[name="gender"]:checked');
+//     let nascimento = document.querySelector('#dateBirth').value;
+
+//     if (!nome || !poder || !genero || !nascimento) {
+//         alert('Por favor, preencha todos os campos.');
+//         return;
+//     }
+
+//     let hero = createHero(nome, poder, genero.id, nascimento);
+
+//     // Inserir os dados do herói no banco de dados
+//     const query = 'INSERT INTO heroes (name, power, gender, birth) VALUES (?, ?, ?, ?)';
+//     connection.query(query, [hero.name, hero.power, hero.gender, hero.birth], (err, results) => {
+//         if (err) {
+//             console.error('Erro ao inserir o herói no banco de dados:', err);
+//             return;
+//         }
+
+//         console.log('Herói cadastrado com sucesso!');
+//         createCard(hero); // Cria o card no front-end após o cadastro no banco de dados
+//     });
+// });
